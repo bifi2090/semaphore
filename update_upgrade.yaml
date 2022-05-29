@@ -1,4 +1,4 @@
-- hosts: linux_deb
+- hosts: proxmox
   tasks:
     - name: Cache updaten
       apt:
