@@ -1,4 +1,4 @@
-- hosts: proxmox
+- hosts: 10.29.29.2
   tasks:
     - name: Cache updaten
       apt:
