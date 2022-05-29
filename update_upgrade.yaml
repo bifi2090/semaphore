@@ -1,0 +1,17 @@
+- hosts: linux_deb
+  tasks:
+    - name: Cache updaten
+      apt:
+       update_cache: yes
+
+    - name: Upgrade aller Pakete der VMs
+      apt:
+        name: "*"
+        state: latest
+- hosts: linux_alp
+  tasks:
+    - name: Cache updaten
+      command: "apk update"
+
+    - name: Upgrade aller Pakete
+      command: "apk upgrade"
