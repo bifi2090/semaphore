@@ -1,4 +1,4 @@
-- hosts: linux_deb
+- hosts: 10.29.29.3
   tasks:
     - name: Cache updaten
       apt:
